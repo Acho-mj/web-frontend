@@ -1,0 +1,186 @@
+<!-- 홈, 메인 페이지 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실시간 소식</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/test.js"></script>
+
+    <!-- Favicons -->
+    <link href="img/alarm.png" rel="icon">
+</head>
+<body>
+    <!--내비게이션 바-->
+    <nav>
+        <ul>
+            <li class="nav_item">
+                <div class="nav_logo">
+                    <a href="home.html">
+                        <!-- 뉴비/새로 방문/초보/뉴스 -->
+                        <span>NEWB.</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="a">
+                    <a href="Aboutus.html">       
+                        <span>ABOUT US</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="search_box">
+                    <form method="POST"> 
+                        <input type="search" class="search_input" name="searched" placeholder="우리 동네 소식을 가장 먼저 접해보세요!" id="search-box">
+                        <label for="search-box"></label>
+                        <button type="submit" class="search_btn" id="search-box">
+                            <img src="img/search.png">
+                        </button>
+                    </form>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="b">
+                    <a href="Board.html">       
+                        <span>게시판</span>
+                    </a>
+                </div>
+            </li>
+          
+            <li class="nav_item">
+                <div class="m">
+                    <a href="Mypage.html">
+                        <span>마이페이지</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="u">
+                    <span>사용자</span> 
+                </div>
+                <div class="dropdown-content">
+                    <span><a href="login.html">로그인</a></span>
+                    <span><a href="signup.html">회원가입</a></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="main">
+        <div class="container">
+            <div id="main_text">
+                지금 우리 동네<br>
+                실시간 소식
+                <div id="sub_text">
+                    <img src="img/gps.png">
+                    내위치
+                </div>
+                <div id="number">153</div> 
+            </div>
+            <div id="main_img">
+                <img src="img/phone.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 실시간 인기 검색 키워드 -->
+    <div class="sub">
+        <div>
+            <h2>실시간 인기 검색 키워드</h2>
+            <h4>2022.11.08.오후 11:48</h4>
+        </div>
+        <img class="keyword" src="img/text.png">
+    </div>
+    
+    
+    <!-- 조회수 top3 -->
+    <div class="sub">
+        <div>
+            <h2>조회수 TOP3 게시글</h2>
+            <h4>2022.11.08.오후 11:48</h4>
+        </div>
+        <div class="sub_wrapper"> 
+            <div class="sub_item">
+                <img src="img/1.jpg">
+                <div class="sub_btn"><a href="post.html"><button>글 보러가기</button></a></div>
+            </div>
+            <div class="sub_item">
+                <img src="img/2.jpg">
+                <div class="sub_btn"><a href="post.html"><button>글 보러가기</button></a></div>
+            </div>
+            <div class="sub_item">
+                <img src="img/3.jpg">
+                <div class="sub_btn"><a href="post.html"><button>글 보러가기</button></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 좋아요 top3 -->
+    <div class="sub">
+        <div>
+            <h2>좋아요 TOP3 게시글</h2>
+            <h4>2022.11.08.오후 11:48</h4>
+        </div>
+        <div class="sub_wrapper"> 
+            <div class="sub_item">
+                <img src="img/4.jpg">
+                <div class="sub_btn"><a href="post.html"><button>글 보러가기</button></a></div>
+            </div>
+            <div class="sub_item">
+                <img src="img/5.jpg">
+                <div class="sub_btn"><a href="post.html"><button>글 보러가기</button></a></div>
+            </div>
+            <div class="sub_item">
+                <img src="img/6.jpg">
+                <div class="sub_btn"><a href="post.html"><button>글 보러가기</button></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footerWrapper">
+            <div class="container1">
+                <p>NEWB.</p>
+                <p>지금 우리 동네 소식 게시판</p>
+            </div>
+            <div class="container2">
+                <div class="container3">
+                    <a href="javascript:void">이용약관</a>
+                    <a href="javascript:void">이용안내</a>
+                    <a href="javascript:void">운영정책</a>
+                </div>
+                <p>서울시 노원구 화랑로 621</p>
+            </div>
+        </div>
+        <hr>
+        <div class="sns">
+            <a href="https://www.instagram.com/ch.oi_mj/">
+                <img class="sns_img" src="img/insta.png">
+            </a>
+            <a href="https://github.com/Acho-mj">
+                <img class="sns_img" src="img/github.png">
+            </a>
+            <a href="https://acho.tistory.com/">
+                <img class="sns_img" src="img/tistory.png">
+            </a>
+            <a href="https://blog.naver.com/choixj">
+                <img class="sns_img" src="img/blog.png">
+            </a>
+        </div> 
+    </footer>
+</body>
+</html>

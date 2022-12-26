@@ -1,0 +1,153 @@
+<!-- 마이페이지 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실시간 소식</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/test.js"></script>
+    <script src="https://code.jQuery.com/jquery-3.4.1.js"></script>
+
+    <!-- Favicons -->
+    <link href="img/alarm.png" rel="icon">
+</head>
+<body>
+    <!--내비게이션 바-->
+    <nav>
+        <ul>
+            <li class="nav_item">
+                <div class="nav_logo">
+                    <a href="home.html">
+                        <!-- 뉴비/새로 방문/초보/뉴스 -->
+                        <span>NEWB.</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="a">
+                    <a href="Aboutus.html">       
+                        <span>ABOUT US</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="search_box">
+                    <form method="POST"> 
+                        <input type="search" class="search_input" name="searched" placeholder="우리 동네 소식을 가장 먼저 접해보세요!" id="search-box">
+                        <label for="search-box"></label>
+                        <button type="submit" class="search_btn" id="search-box">
+                            <img src="img/search.png">
+                        </button>
+                    </form>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="b">
+                    <a href="Board.html">       
+                        <span>게시판</span>
+                    </a>
+                </div>
+            </li>
+          
+            <li class="nav_item">
+                <div class="m">
+                    <a href="Mypage.html">
+                        <span>마이페이지</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav_item">
+                <div class="u">
+                    <span>사용자</span> 
+                </div>
+                <div class="dropdown-content">
+                    <span><a href="login.html">로그인</a></span>
+                    <span><a href="signup.html">회원가입</a></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 마이페이지/프로필 -->
+    <section class="mypage">
+        <div class="profile">
+            <img onclick="imgClick()" class="profile_img" id="pro1" src="img/frog.jpg">
+        </div>
+        <!-- 프로필 편집 -->
+        <div class="setting">
+            <!-- 인스타 닉네임 불러오기 -->
+            <span id="name">마포구소식통</span>
+            <img id="set" onclick="nameClick()" src="img/settings.png"><br>
+            <button id="edit" onclick="editClick()">프로필 편집</button>
+        </div>
+    </section>
+    <!-- 동네 정보 -->
+    <form id="intro">
+        <span id="nickname">최민정</span><br>
+        <span id="write">서울특별시 마포구 ......</span><br>
+        <a id="url" href="">www.facebookinsta.co.kr</a>
+    </form>
+
+    <form id="change" method = "post">
+        <table>
+            <tr>
+                <td><input type="text" id="n" class="c_nickname" value="최민정"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="text" id="w" class="c_write" value="크리스마스는 12월 25일"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="u" class="c_url" value="www.christmas.co.kr"></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- 내가 쓴 게시물 -->
+    <div class="board">
+        <div class="board_list">
+            <table id="my">
+                <thead>
+                <tr class="board_head">
+                    <th class="th-title">내가 작성한 글</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="post.html">구급차 소리 뭔가요?</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="post.html">동네에 파티룸 추천해주세요.</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="post.html">트리 팝니다.</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="post.html">방금 천둥 소리 들은 사람?</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="post.html">교통 사고 났나봐요. 차막히네..</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="post.html">오늘 여의도에서 시위한대요.</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
